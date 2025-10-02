@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kisi-Kisi TKJ</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #1a1a2e;
+            color: #e0e0e0;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            text-align: center;
+            color: #ffffff;
+            margin-bottom: 10px;
+            background: -webkit-linear-gradient(45deg, #4f46e5, #d946ef);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        header p {
+            text-align: center;
+            color: #a9a9d0;
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: #ffffff;
+            border-left: 4px solid #d946ef;
+            padding-left: 15px;
+            margin-top: 40px;
+            margin-bottom: 25px;
+        }
+
+        .qa-card {
+            background-color: #16213e;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            border: 1px solid #2a3a68;
+            transition: all 0.3s ease;
+        }
+
+        .qa-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(217, 70, 239, 0.2);
+        }
+
+        .question {
+            padding: 20px 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .question p {
+            flex-grow: 1;
+            margin-right: 20px;
+            font-weight: 600;
+            color: #f0f0f0;
+        }
+
+        .question .number {
+            color: #d946ef;
+            margin-right: 15px;
+            font-weight: 700;
+        }
+
+        .toggle-icon {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #a9a9d0;
+            transition: transform 0.4s ease;
+            flex-shrink: 0;
+        }
+
+        .answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s cubic-bezier(0.25, 0.8, 0.25, 1), padding 0.5s ease;
+            padding: 0 25px;
+        }
+
+        .answer p {
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.2);
+            border-left: 3px solid #4f46e5;
+            color: #c0c0ff;
+            font-style: italic;
+        }
+
+        .qa-card.active .answer {
+            max-height: 200px;
+            padding-bottom: 20px;
+        }
+
+        .qa-card.active .toggle-icon {
+            transform: rotate(45deg);
+            color: #4f46e5;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Kisi-Kisi TKJ</h1>
+            <p>Klik pada setiap pertanyaan untuk melihat atau menyembunyikan jawabannya.</p>
+        </header>
+
+        <main>
+            <section id="bagian1">
+                <h2>Bagian 1</h2>
+
+                <div class="qa-card">
+                    <div class="question"><span class="number">1.</span>
+                        <p>Yang mana dari topologi jaringan berikut yang paling rentan terhadap kegagalan jika satu node
+                            pusatnya mati?</p><span class="toggle-icon">+</span>
+                    </div>
+                    <div class="answer">
+                        <p>Topologi Star</p>
+                    </div>
+                </div>
+                <div class="qa-card">
+                    <div class="question"><span class="number">2.</span>
+                        <p>Jenis topologi jaringan yang terdiri dari satu jalur komunikasi tunggal dan terhubung ke
+                            semua perangkat adalah...</p><span class="toggle-icon">+</span>
+                    </div>
+                    <div class="answer">
+                        <p>Topologi Bus</p>
+                    </div>
+                </div>
+                <div class="qa-card">
+                    <div class="question"><span class="number">3.</span>
+                        <p>Jenis arsitektur jaringan yang server berfungsi sebagai pusat pengendali jaringan dan
+                            sementara klien berfungsi sebagai pengguna jaringan yang terhubung ke server untuk meminta
+                            layanan atau data, disebut arsitektur...</p><span class="toggle-icon">+</span>
+                    </div>
+                    <div class="answer">
+                        <p>Client-Server</p>
+                    </div>
+                </div>
+                <div class="qa-card">
+                    <div class="question"><span class="number">4.</span>
+                        <p>Jenis topologi jaringan yang setiap perangkat terhubung dalam bentuk lingkaran tertutup di
+                            mana setiap perangkat memiliki dua koneksi satu ke perangkat sebelah kanan dan satu ke
+                            perangkat sebelah kiri disebut topologi...</p><span class="toggle-icon">+</span>
+                    </div>
+                    <div class="answer">
+                        <p>Topologi Ring</p>
+                    </div>
+                </div>
+                <div class="qa-card">
+                    <div class="question"><span class="number">5.</span>
+                        <p>Di bawah ini adalah beberapa hal yang perlu dipertimbangkan dalam memilih teknologi jaringan
+                            nirkabel indoor dan outdoor, kecuali...</p><span class="toggle-icon">+</span>
+                    </div>
+                    <div class="answer">
+                        <p>Pilih selain biaya, jumlah pengguna, dan keamanan</p>
+                    </div>
+                </div>
+                <div class="qa-card">
+                    <div class="question"><span class="number">6.</span>
+                        <p>Yang mengeluarkan standar jaringan nirkabel yaitu IEEE, apa kepanjangan dari IEEE?</p><span
+                            class="toggle-icon">+</span>
+                    </div>
+                    <div class="answer">
+                        <p>Institute of Electrical and Electronics Engineers</p>
+                    </div>
+                </div>
+                <div class="qa-card">
+                    <div class="question"><span class="number">7.</span>
+                        <p>Infrastruktur komunikasi yang berfungsi sebagai titik masuk atau penghubung antara jaringan
+                            private cloud dan jaringan public cloud adalah jaringan...</p><span
+                            class="toggle-icon">+</span>
+                    </div>
+                    <div class="answer">
+                        <p>Gateway</p>
+                    </div>
+                </div>
+                <div class="qa-card">
+                    <div class="question"><span class="number">8.</span>
+                        <p>Protokol apa yang digunakan untuk mentransfer halaman web di World Wide Web?</p><span
+                            class="toggle-icon">+</span>
+                    </div>
+                    <div class="answer">
+                        <p>HTTP</p>
+                    </div>
+                </div>
+                <div class="qa-card">
+                    <div class="question"><span class="number">9.</span>
+                        <p>Sebuah jaringan yang menghubungkan perangkat dalam area geografis yang terbatas, seperti
+                            kantor atau sekolah, disebut...</p><span class="toggle-icon">+</span>
+                    </div>
+                    <div class="answer">
+                        <p>LAN (Local Area Network)</p>
+                    </div>
+                </div>
+                <div class="qa-card">
+                    <div class="question"><span class="number">10.</span>
+                        <p>Yang mana dari berikut ini yang merupakan kelemahan utama dari topologi Bus?</p><span
+                            class="toggle-icon">+</span>
+                    </div>
+                    <div class="answer">
+                        <p>Sulit untuk mendeteksi kesalahan</p>
+                    </div>
+                </div>
+                <div class="qa-card">
+                    <div class="question"><span class="number">11.</span>
+                        <p>Protokol yang berfungsi untuk menerjemahkan nama domain (seperti www.google.com) menjadi
+                            alamat IP yang bisa dipahami oleh komputer adalah...</p><span class="toggle-icon">+</span>
+                    </div>
+                    <div class="answer">
+                        <p>DNS</p>
+                    </div>
+                </div>
+                <div class="qa-card">
+                    <div class="question"><span class="number">12.</span>
+                        <p>Berapakah panjang alamat IPv4 dalam bit?</p><span class="toggle-icon">+</span>
+                    </div>
+                    <div class="answer">
+                        <p>32 bit</p>
+                    </div>
+                </div>
+                <div class="qa-card">
+                    <div class="question"><span class="number">13.</span>
+                        <p>Salah satu kelemahan utama IPv4 yang mendorong pengembangan IPv6 adalah...</p><span
+                            class="toggle-icon">+</span>
+                    </div>
+                    <div class="answer">
+                        <p>Keterbatasan jumlah alamat</p>
+                    </div>
+                </div>
+                <div class="qa-card">
+                    <div class="question"><span class="number">14.</span>
+                        <p>Berapakah panjang alamat IPv6 dalam bit?</p><span class="toggle-icon">+</span>
+                    </div>
+                    <div class="answer">
+                        <p>128 bit</p>
+                    </div>
+                </div>
+                <div class="qa-card">
+                    <div class="question"><span class="number">15.</span>
+                        <p>Format alamat IPv6 menggunakan notasi...</p><span class="toggle-icon">+</span>
+                    </div>
+                    <div class="answer">
+                        <p>Heksadesimal</p>
+                    </div>
+                </div>
+                <div class="qa-card">
+                    <div class="question"><span class="number">16.</span>
+                        <p>Apa manfaat utama dari penggunaan IPv6 dibandingkan IPv4 dalam hal skalabilitas?</p><span
+                            class="toggle-icon">+</span>
+                    </div>
+                    <div class="answer">
+                        <p>Kemampuan untuk menyediakan lebih banyak alamat unik</p>
+                    </div>
+                </div>
+                <div class="qa-card">
+                    <div class="question"><span class="number">17.</span>
+                        <p>Protokol keamanan Wi-Fi manakah yang dianggap paling aman saat ini?</p><span
+                            class="toggle-icon">+</span>
+                    </div>
+                    <div class="answer">
+                        <p>WPA3</p>
+                    </div>
+                </div>
+                <div class="qa-card">
+                    <div class="question"><span class="number">18.</span>
+                        <p>Salah satu kerugian utama dari jaringan nirkabel dibandingkan dengan jaringan kabel adalah...
+                        </p><span class="toggle-icon">+</span>
+                    </div>
+                    <div class="answer">
+                        <p>Kecepatan lebih rendah dan lebih rentan terhadap interferensi sinyal</p>
+                    </div>
+                </div>
+                <div class="qa-card">
+                    <div class="question"><span class="number">19.</span>
+                        <p>Standar Wi-Fi yang beroperasi pada frekuensi 5 GHz dan dikenal karena kecepatan transfer data
+                            yang tinggi adalah...</p><span class="toggle-icon">+</span>
+                    </div>
+                    <div class="answer">
+                        <p>802.11a / 802.11ac</p>
+                    </div>
+                </div>
+                <div class="qa-card">
+                    <div class="question"><span class="number">20.</span>
+                        <p>Jenis kabel jaringan manakah yang memiliki inti tembaga di tengah yang dikelilingi oleh
+                            lapisan isolasi, pelindung, dan selubung luar?</p><span class="toggle-icon">+</span>
+                    </div>
+                    <div class="answer">
+                        <p>Coaxial</p>
+                    </div>
+                </div>
+
+            </section>
+
+            <section id="bagian2">
+                <h2>Bagian 2</h2>
+
+                <div class="qa-card">
+                    <div class="question">
+                        <p>Apa yang dimaksud dengan SSID (Service Set Identifier) dalam jaringan nirkabel?</p><span
+                            class="toggle-icon">+</span>
+                    </div>
+                    <div class="answer">
+                        <p>Untuk membuat nama unik jaringan</p>
+                    </div>
+                </div>
+                <div class="qa-card">
+                    <div class="question">
+                        <p>Mengapa penggunaan jaringan nirkabel seringkali lebih disukai di lingkungan yang membutuhkan
+                            mobilitas tinggi, seperti kafe atau bandara?</p><span class="toggle-icon">+</span>
+                    </div>
+                    <div class="answer">
+                        <p>Karena memungkinkan pengguna terhubung tanpa perangkat fisik</p>
+                    </div>
+                </div>
+                <div class="qa-card">
+                    <div class="question">
+                        <p>Apa kepanjangan dari IEEE?</p><span class="toggle-icon">+</span>
+                    </div>
+                    <div class="answer">
+                        <p>Institute of Electrical and Electronics Engineers.</p>
+                    </div>
+                </div>
+                <div class="qa-card">
+                    <div class="question">
+                        <p>Apa kepanjangan diri SSID?</p><span class="toggle-icon">+</span>
+                    </div>
+                    <div class="answer">
+                        <p>Service Set Identifier</p>
+                    </div>
+                </div>
+                <div class="qa-card">
+                    <div class="question">
+                        <p>Apa yang dimaksud dengan VoIP?</p><span class="toggle-icon">+</span>
+                    </div>
+                    <div class="answer">
+                        <p>Teknologi komunikasi yang menggunakan koneksi internet melalui berbagai media, seperti
+                            komputer, tablet, handphone, dan sebagainya.</p>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const qaCards = document.querySelectorAll('.qa-card');
+
+            qaCards.forEach(card => {
+                const question = card.querySelector('.question');
+
+                question.addEventListener('click', () => {
+                    card.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>
